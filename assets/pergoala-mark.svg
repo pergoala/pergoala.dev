@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Pergoala mark">
+  <title>Pergoala Development Methodology</title>
+  <defs>
+    <linearGradient id="pg-vine" x1="12" y1="54" x2="52" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E8A5E"/>
+      <stop offset="55%" stop-color="#24B47E"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="pg-beam" x1="6" y1="18" x2="58" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C8D4E3"/>
+      <stop offset="50%" stop-color="#F1F5F9"/>
+      <stop offset="100%" stop-color="#C8D4E3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Overhead pergola canopy rafters (protective shelter & uniting span) -->
+  <g stroke="#64748B" stroke-width="2.4" stroke-linecap="round">
+    <line x1="13" y1="11" x2="51" y2="11" stroke="#94A3B8" stroke-width="2.2"/>
+    <line x1="18" y1="11" x2="18" y2="18"/>
+    <line x1="27.3" y1="11" x2="27.3" y2="18"/>
+    <line x1="36.7" y1="11" x2="36.7" y2="18"/>
+    <line x1="46" y1="11" x2="46" y2="18"/>
+  </g>
+
+  <!-- Primary architectural pergola frame: cantilevered beam + two open posts -->
+  <path d="M7 18 H57" stroke="url(#pg-beam)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M18 18 V54" stroke="#E2E8F0" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="M46 18 V54" stroke="#E2E8F0" stroke-width="3.8" stroke-linecap="round"/>
+
+  <!-- Subtle mid-span structural tie-beam (lightweight anchor in the wind) -->
+  <path d="M18 35 H46" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 4"/>
+
+  <!-- Organic climbing vine: fast-growing software anchored to the posts, guided upward toward the goal -->
+  <path d="M14 53 C18 46, 20 39, 27 35 C34 31, 41 28, 46 21 C48 18, 50 15, 52 11"
+        fill="none" stroke="url(#pg-vine)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Small secondary leaf / tendril gripping the left structural post -->
+  <path d="M23 38 C20 33, 22 27, 28 26 C28 31, 26 35, 23 38 Z" fill="#34D399" opacity="0.9"/>
+
+  <!-- Anchor nodes where growth meets the structure -->
+  <circle cx="18" cy="46.5" r="2.2" fill="#0D1117" stroke="#34D399" stroke-width="1.8"/>
+  <circle cx="46" cy="21" r="2.2" fill="#0D1117" stroke="#34D399" stroke-width="1.8"/>
+
+  <!-- Goal Beacon (amber diamond-sun node at the summit) -->
+  <circle cx="53" cy="10" r="5" fill="#F5B84B" opacity="0.22"/>
+  <circle cx="53" cy="10" r="3.2" fill="#F5B84B"/>
+</svg>
